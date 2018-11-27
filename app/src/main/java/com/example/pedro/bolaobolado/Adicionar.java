@@ -31,6 +31,8 @@ public class Adicionar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar);
 
+        overridePendingTransition(R.anim.main_to_add, R.anim.menu_sair);
+
         // Recuperando variáveis do template
         txtTimeA               = findViewById(R.id.txtTimeA);
         txtTimeB               = findViewById(R.id.txtTimeB);

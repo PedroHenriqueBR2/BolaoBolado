@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        overridePendingTransition(R.anim.menu_voltar, R.anim.add_to_main);
+
         // Recuperando variáveis do template
         lista  = (ListView) findViewById(R.id.lista);
         btnAdd = (Button) findViewById(R.id.btnAdd);

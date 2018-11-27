@@ -34,6 +34,8 @@ public class InformacaoUpdate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacao_update);
 
+        setContentView(R.layout.activity_informacao_update);
+
         // Recuperando variáveis do template
         btnAtualizar                 = (Button)findViewById(R.id.btnAtualizar);
         txtIdUpdate                  = (TextView) findViewById(R.id.txtIdUpdate);

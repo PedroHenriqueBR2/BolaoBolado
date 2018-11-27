@@ -32,6 +32,8 @@ public class InformacaoAposta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacao_aposta);
 
+        overridePendingTransition(R.anim.main_to_add, R.anim.menu_sair);
+
         // Recuperando variaveis do template
         txtInfoId           = findViewById(R.id.txtInfoId);
         txtInfoTimeA        = findViewById(R.id.txtInfoTimeA);
