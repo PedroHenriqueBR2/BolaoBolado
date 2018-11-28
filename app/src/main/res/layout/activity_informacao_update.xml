@@ -34,29 +34,27 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO A"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtInfoData" />
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtIdUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0"
+                    android:textSize="1dp" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO B"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtInfoData" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -326,7 +324,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/txtTelefoneResponsavel"
+                    android:id="@+id/txtTelefoneResponsavelUpdate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
