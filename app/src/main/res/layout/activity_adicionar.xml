@@ -5,11 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
+    android:background="@drawable/campoverde"
     tools:context=".Adicionar">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,11 +25,11 @@
                 android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,28 +37,32 @@
 
                 <TextView
                     android:id="@+id/textView2"
+                    style="@style/rotulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO A"
+                    android:textColor="@color/colorAccent"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtInfoData" />
 
                 <TextView
                     android:id="@+id/textView3"
+                    style="@style/rotulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO B"
+                    android:textColor="@color/colorAccent"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtInfoData" />
@@ -62,12 +71,13 @@
 
             <TextView
                 android:id="@+id/textView8"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Nomes:"
@@ -80,11 +90,11 @@
                 android:id="@+id/linearLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:gravity="top|center"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -93,16 +103,19 @@
 
                 <EditText
                     android:id="@+id/txtTimeA"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Nome A"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/textView10"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="X"
@@ -111,27 +124,30 @@
 
                 <EditText
                     android:id="@+id/txtTimeB"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Nome B"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView9"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#ffdddddd"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Placar:"
@@ -144,11 +160,11 @@
                 android:id="@+id/linearLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -156,6 +172,7 @@
 
                 <EditText
                     android:id="@+id/txtGolA"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -163,10 +180,12 @@
                     android:gravity="center"
                     android:hint="Gols"
                     android:inputType="number"
-                    android:numeric="integer" />
+                    android:numeric="integer"
+                    android:textColor="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/textView11"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -176,25 +195,28 @@
 
                 <EditText
                     android:id="@+id/txtGolB"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Gols"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView12"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Pago"
@@ -222,19 +244,23 @@
 
                 <TextView
                     android:id="@+id/textView13"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pago:        "
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtPago"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Pg"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
             </LinearLayout>
 
             <LinearLayout
@@ -246,30 +272,35 @@
 
                 <TextView
                     android:id="@+id/textView23"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Valor:        "
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtValorPago"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="00,00"
-                    android:inputType="number|numberDecimal" />
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/colorAccent" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView14"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Responsável pelo bolão"
@@ -296,19 +327,23 @@
 
                 <TextView
                     android:id="@+id/textView15"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nome:      "
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtResponsavel"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Nome do responsável"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
             </LinearLayout>
 
             <LinearLayout
@@ -320,31 +355,36 @@
 
                 <TextView
                     android:id="@+id/textView26"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Telefone: "
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtTelefoneResponsavel"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Telefone para contato"
-                    android:inputType="text|number|phone" />
+                    android:inputType="text|number|phone"
+                    android:textColor="@color/colorAccent" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView4"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#FFDDDDDD"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#66DDDDDD"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Data do jogo"
@@ -360,19 +400,23 @@
 
                 <TextView
                     android:id="@+id/textView5"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Data:        "
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtDataJogo"
+                    style="@style/caixadedialogo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="dd/mm/aaaa"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent" />
 
             </LinearLayout>
 

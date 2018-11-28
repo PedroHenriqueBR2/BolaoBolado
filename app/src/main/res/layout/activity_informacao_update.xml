@@ -5,11 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
+    android:background="@drawable/campoverde"
     tools:context=".Adicionar">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,11 +37,13 @@
 
                 <TextView
                     android:id="@+id/textView2"
+                    style="@style/rotulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO A"
+                    android:textColor="@color/cinza"
                     android:textStyle="bold" />
 
                 <TextView
@@ -49,23 +56,26 @@
 
                 <TextView
                     android:id="@+id/textView3"
+                    style="@style/rotulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SELEÇÃO B"
+                    android:textColor="@color/cinza"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView8"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Nomes:"
@@ -91,6 +101,7 @@
 
                 <EditText
                     android:id="@+id/txtTimeAUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -101,6 +112,7 @@
 
                 <TextView
                     android:id="@+id/textView10"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="X"
@@ -109,6 +121,7 @@
 
                 <EditText
                     android:id="@+id/txtTimeBUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -121,15 +134,16 @@
 
             <TextView
                 android:id="@+id/textView9"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#ffdddddd"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Placar:"
@@ -154,6 +168,7 @@
 
                 <EditText
                     android:id="@+id/txtGolAUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -165,6 +180,7 @@
 
                 <TextView
                     android:id="@+id/textView11"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -174,6 +190,7 @@
 
                 <EditText
                     android:id="@+id/txtGolBUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -185,14 +202,15 @@
 
             <TextView
                 android:id="@+id/textView12"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Pago"
@@ -220,13 +238,16 @@
 
                 <TextView
                     android:id="@+id/textView13"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pago:        "
+                    android:textColor="@color/cinza"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtPagoUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -244,13 +265,16 @@
 
                 <TextView
                     android:id="@+id/textView23"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Valor:        "
+                    android:textColor="@color/cinza"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtValorPagoUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -262,12 +286,13 @@
 
             <TextView
                 android:id="@+id/textView14"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ffdddddd"
+                android:layout_marginEnd="8dp"
+                android:background="#66dddddd"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Responsável pelo bolão"
@@ -294,13 +319,16 @@
 
                 <TextView
                     android:id="@+id/textView15"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nome:      "
+                    android:textColor="@color/cinza"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtResponsavelUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -318,13 +346,16 @@
 
                 <TextView
                     android:id="@+id/textView26"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Telefone: "
+                    android:textColor="@color/cinza"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtTelefoneResponsavelUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -336,13 +367,14 @@
 
             <TextView
                 android:id="@+id/textView4"
+                style="@style/informacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#FFDDDDDD"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#66DDDDDD"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Data do jogo"
@@ -358,13 +390,16 @@
 
                 <TextView
                     android:id="@+id/textView5"
+                    style="@style/rotulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Data:        "
+                    android:textColor="@color/cinza"
                     android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtDataJogoUpdate"
+                    style="@style/caixadedialogo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -397,24 +432,3 @@
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
-
-<!--
-                <Button
-                android:id="@+id/btnAtualizar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/caixa_de_input"
-                android:onClick="atualizar"
-                android:text="Atualizar"
-                android:textColor="#ffffffff"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
- -->

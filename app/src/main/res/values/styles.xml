@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="rotulo">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="caixadedialogo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/cinza</item>
+    </style>
+
+    <style name="informacao">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">#66dddddd</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
 </resources>
