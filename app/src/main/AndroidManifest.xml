@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +20,8 @@
 
         <activity
             android:name=".Adicionar"
-            android:label="Nova Aposta" />
+            android:label="Nova Aposta"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
 
         <activity
             android:name=".InformacaoAposta"
@@ -31,7 +33,9 @@
 
         <activity
             android:name=".InformacaoUpdate"
-            android:label="Atualizar dados"></activity>
+            android:label="Atualizar dados"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
     </application>
 
 </manifest>
