@@ -1,12 +1,15 @@
 # Bolao Bolado
-Aplicativo desenvolvido para manter registrado apostas em campeonatos, desenvolvido especialmente para a copa do mundo.
+Aplicativo desenvolvido para manter registrado apostas em jogos de futebol, desenvolvido especificamente para a copa do mundo mas que pode ser utiliao para apostas em geral, relacionadas ao futebol.
 
 # Desenvolvimento do aplicativo
-Aplicativo desenvolvido utilizando Android Studio
+Aplicativo desenvolvido utilizando as seguintes tecnologias:
+ - IDEA Android Studio
+ - Linguagem de programação Java
+ - Banco de dados SQLite
 
-# Tecnologias utilizadas
+# Tecnologias utilizadas (Detalhado)
 ## SQLITE
-Para que os sejam armazenados o banco de dados SQLite foi utilizado, juntamente ao SQLiteOpenHelper.
+Para que os dados pudessem ser armazenados o banco de dados SQLite foi utilizado, juntamente ao SQLiteOpenHelper.
 
 ![SQLite](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/300px-SQLite370.svg.png)
 
